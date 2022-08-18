@@ -23,5 +23,3 @@ const sayHey = () => 'hey'
 console.log(sayHello())
 console.log(sayHi())
 console.log(sayHey())
-
-function add(num1, num2)
