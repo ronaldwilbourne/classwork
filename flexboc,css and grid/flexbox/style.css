@@ -1,0 +1,28 @@
+/*into to flex box*/
+/*{
+    box-sizing: border-box;
+}*/
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px solid rebeccapurple;
+    height: 50px;
+    background-color: #a2cbb6;
+    font-size: 20ox;
+    margin: 10px;
+    /*top,right and bottom and left*/
+    color: #f3dba8;
+
+}
+div{
+    outline: 2px solid burlywood;
+    padding: 13px;
+}
+nav > div:last-child{
+    margin-left: auto;
+}

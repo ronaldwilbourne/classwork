@@ -1,0 +1,46 @@
+/*body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: black;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+}
+/* P{
+    position: absolute;
+    font-size: larger;
+    color: white;
+    text-align: center;
+}*/
+
+body{
+    background-color: burlywood;
+    display: flex;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+}
+.box2 {
+    height: 30px;
+    width: 30px;
+    color: antiquewhite;
+    background-color:green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.box3 {
+    height: 2px;
+    width: 2px;
+    background-color:red;
+    position:relative;
+}
