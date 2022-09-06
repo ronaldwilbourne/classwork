@@ -475,79 +475,51 @@ for (let i = 0; i < user.purchased.length; i++) {
 // ***** Hungry for  more *****
 // Cat combinator
 
-// Mama cat
-// let cat1 = {
-// 	name: "Fluffy",
-// 	age: 7,
-// 	breed: "Persian",
-// };
+/// Mama cat
+let cat1 = {
+   name: "Fluffy",
+   age: 7,
+   breed: "Persian",
+};
 // // console.log(cat1.age, cat1.breed);
-
 // // Papa cat
-// let cat2 = {
-// 	name: "Whiskers",
-// 	age: 10,
-// 	breed: "Mixed",
-// };
-
+let cat2 = {
+   name: "Whiskers",
+   age: 10,
+   breed: "Mixed",
+};
 // // 3. Combine the two cats into one object
 // // const combineCats = (mama, papa) => {
 // //     console.log(mama);
 // //     console.log(papa);
 // // }
 // // console.log(combineCats(cat1, cat2));
-
-// // combine the two cats into an object
-// const combineCats = (mama, papa) => {
-// 	cat1.age = 0;
-// 	cat2.age = 1;
-// 	return {
-// 		name: mama.name + papa.name,
-// 		age: mama.age + papa.age,
-// 		breed: mama.breed + "-" + papa.breed,
-// 	};
-// };
-
-// // 4. Cat brain bender
-// console.log(
-// 	combineCats(
-// 		combineCats(cat1, cat2),
-// 		combineCats(
-// 			combineCats(cat1, cat2),
-// 			combineCats(
-// 				combineCats(cat1, cat2),
-// 				combineCats(cat1, cat2),
-// 				combineCats(cat1, cat2),
-// 				combineCats(cat1, cat2),
-// 				combineCats(cat1, cat2)
-// 			)
-// 		)
-// 	)
-// );
-
-
-Stephine Rasberry
-  2:58 PM
-Revised Cat Combinator
-2:58
-// Cat combinator
-// Mama cat
-let cat1 = {
-    name: "Fluffy",
-    age: 7,
-    breed: "Persian",
+// combine the two cats into an object
+function combineCats(mama, papa) {
+   let twoCats = {
+       age: 1,
+   name: mama.name + papa.name,
+   breed: mama.breed + "-" + papa.breed
+   };
+   return twoCats;
 };
-// // console.log(cat1.age, cat1.breed);
-// // Papa cat
-let cat2 = {
-    name: "Whiskers",
-    age: 10,
-    breed: "Mixed",
-
-
-
-
-
+// // 4. Cat brain bender
+console.log(
+   combineCats(
+       combineCats(cat1, cat2),
+       combineCats(
+           combineCats(cat1, cat2),
+           combineCats(
+               combineCats(cat1, cat2),
+               combineCats(cat1, cat2),
+               combineCats(cat1, cat2),
+               combineCats(cat1, cat2),
+               combineCats(cat1, cat2)
+           )
+       )
+   )
+);
+console.log(combineCats(cat1, cat2));
 
 
 

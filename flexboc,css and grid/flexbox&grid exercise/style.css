@@ -1,0 +1,29 @@
+nav{
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+body{
+    background-color: aliceblue;
+    grid-area: auto;
+
+}
+section {
+    font-size: larger;
+    padding: 10px;
+    margin: 50px;
+
+
+#StayFocusd-infobar{
+    grid-area: auto;
+    background-color: aqua;
+
+}
+#content{
+    grid-area: main;
+}

@@ -3,12 +3,12 @@ body {
 }
 
 .container {
-    width: 300px;
-    margin: 20px auto;
-    height: 300px;
+    width: 500px;
+    margin: 10px auto;
+    height: 400px;
     display: grid;
-    grid-gap: 4px;
-    grid-template-rows: 100px 100px 1fr 1fr;
+    grid-gap: 2px;
+    grid-template-rows:50px 100px 1fr 1fr;
     grid-template-columns: 80px 1fr 30px;
     background-color: black;
     border-style: solid;
@@ -26,8 +26,10 @@ body {
 
 .two {
     background-color: red;
-    grid-row: 1/5;
-    grid-column: 2;
+    grid-template-columns:100 ;
+    grid-row: span 2;
+    grid-template-rows:100px 
+
 }
 
 .three {
@@ -39,7 +41,8 @@ body {
 }
 
 .five {
-    grid-row: span 2/5;
+    grid-row: span 3/5;
+    background-color: antiquewhite;
 }
 
 .six {
@@ -48,5 +51,5 @@ body {
 
 .seven { 
     background-color: yellow; 
-    grid-row: 7/3;
+    grid: row 7/4;
 }
